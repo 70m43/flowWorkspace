@@ -96,7 +96,7 @@ merge_list_to_gs <- function(x,...){
   if(is(x, "GatingSetList"))
     x <- x@data
   stopifnot(is(x, "list"))
-  validitycheck(x)
+  #validitycheck(x)
   
   # make sure the column names of flow data are in the same order
   cols <- flowCore::colnames(gs_cyto_data(x[[1]]))
